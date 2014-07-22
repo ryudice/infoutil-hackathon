@@ -1,0 +1,7 @@
+INDEX
+{{#if session.isAuthenticated}}
+	<a {{action 'invalidateSession'}}>Logout</a>
+{{else}}
+	<a {{action 'loginWithFacebook'}}>Login</a>
+
+{{/if}}
