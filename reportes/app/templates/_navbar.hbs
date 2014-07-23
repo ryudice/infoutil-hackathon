@@ -22,9 +22,28 @@
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                    {{#if session.isAuthenticated}}
+                    <li class="page-scroll dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img  width="28" height="28"
+                             {{bind-attr src=user_photo}} class="img-rounded" alt="" /> <span class="caret"></span>
+                             </a>
+                             <ul class="dropdown-menu" role="menu">
+                                <li class="page-scroll">
+                                    <a {{action 'invalidateSession'}}>Logout</a>
+                                </li>
+                                 
+                             </ul>
                     </li>
+                    {{else}}
+                    <li class="page-scroll">
+                        <ul class="list-inline">
+                            <li><a href="#" class="btn-social btn-outline" {{action 'loginWithFacebook'}}><i class="fa fa-fw fa-facebook"></i></a></li>
+                        </ul>
+                         
+                    </li>
+                    {{/if}}
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

@@ -10,6 +10,8 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+
+
 var FbAuthenticator = Base.extend({
         restore: function(properties) {
           return new Ember.RSVP.Promise(function(resolve, reject) {
@@ -31,23 +33,34 @@ var FbAuthenticator = Base.extend({
                 });
               } else if (fbResponse.status === 'not_authorized') {
                 FB.login(function(fbResponse) {
+                  console.log(fbResponse);
                   if (fbResponse.authResponse) {
+                    
                     Ember.run(function() {
                       resolve({ accessToken: fbResponse.authResponse.accessToken });
                     });
                   } else {
                     reject();
                   }
+                },{
+                  scope:'email',
+                  return_scopes :true
                 });
               } else {
                 FB.login(function(fbResponse) {
+                  console.log(fbResponse);
+
                   if (fbResponse.authResponse) {
+
                     Ember.run(function() {
                       resolve({ accessToken: fbResponse.authResponse.accessToken });
                     });
                   } else {
                     reject();
                   }
+                },{
+                  scope:'email',
+                  return_scopes :true
                 });
               }
             });
