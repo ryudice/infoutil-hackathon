@@ -1,5 +1,10 @@
 InfoutilApi::Application.routes.draw do
-  resources :reportes
+  
+
+  namespace :api do
+    resources :users
+    resources :reportes
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
