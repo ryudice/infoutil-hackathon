@@ -24,7 +24,6 @@
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-static-compiler": "^0.1.4",
     "ember-cli": "0.0.39",
-    "ember-cli-bootstrap": "0.0.3",
     "ember-cli-ember-data": "0.1.0",
     "ember-cli-ic-ajax": "0.1.1",
     "ember-cli-simple-auth": "^0.6.3",
