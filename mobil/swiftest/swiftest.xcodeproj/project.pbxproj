@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8543FD1623624AE0B27D64C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4405D2A12A640A9A734EE96 /* libPods.a */; };
+		9D6D89D3198434EA001D6D09 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D89D2198434EA001D6D09 /* BaseViewController.swift */; };
+		9D6D89D719843871001D6D09 /* MisReportesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */; };
+		9D7047A019843B9C006CAD18 /* Reporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70479F19843B9C006CAD18 /* Reporte.swift */; };
+		9D7047A319844640006CAD18 /* MisReportesObjcTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */; };
 		B768F759197E043300061563 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B768F758197E043300061563 /* LoginViewController.m */; };
 		B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768F75C197E10F000061563 /* SideBarTableViewController.swift */; };
 		B7BDCC14197F8063005BC12F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BDCC13197F8063005BC12F /* CoreLocation.framework */; };
@@ -20,7 +24,6 @@
 		B7DC66D9197C890500025F9B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC66D8197C890500025F9B /* SWRevealViewController.m */; };
 		B7DC66DD197CB74B00025F9B /* NuevoReporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC66DC197CB74B00025F9B /* NuevoReporteViewController.swift */; };
 		B7DC66DF197CB87E00025F9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DC66DE197CB87E00025F9B /* MapKit.framework */; };
-		B7F3C4BC197F55B8000F9E58 /* MisReportesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C4BB197F55B8000F9E58 /* MisReportesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D6D89D2198434EA001D6D09 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MisReportesTableViewController.swift; path = ../MisReportesTableViewController.swift; sourceTree = "<group>"; };
+		9D70479F19843B9C006CAD18 /* Reporte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reporte.swift; sourceTree = "<group>"; };
+		9D7047A119844640006CAD18 /* MisReportesObjcTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MisReportesObjcTableViewController.h; sourceTree = "<group>"; };
+		9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MisReportesObjcTableViewController.m; sourceTree = "<group>"; };
 		B768F757197E043300061563 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B768F758197E043300061563 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B768F75C197E10F000061563 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +62,6 @@
 		B7DC66D8197C890500025F9B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B7DC66DC197CB74B00025F9B /* NuevoReporteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NuevoReporteViewController.swift; path = ../NuevoReporteViewController.swift; sourceTree = "<group>"; };
 		B7DC66DE197CB87E00025F9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B7F3C4BB197F55B8000F9E58 /* MisReportesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MisReportesViewController.swift; sourceTree = "<group>"; };
 		D4405D2A12A640A9A734EE96 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40E17BADEF3432D9EA28750 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +120,7 @@
 		B7DC66B6197B7E4C00025F9B /* swiftest */ = {
 			isa = PBXGroup;
 			children = (
+				9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */,
 				B768F75C197E10F000061563 /* SideBarTableViewController.swift */,
 				B7DC66D7197C890500025F9B /* SWRevealViewController.h */,
 				B7DC66DC197CB74B00025F9B /* NuevoReporteViewController.swift */,
@@ -120,7 +128,6 @@
 				B7DC66B9197B7E4C00025F9B /* AppDelegate.swift */,
 				B7DC66BB197B7E4C00025F9B /* ViewController.swift */,
 				B7DC66BD197B7E4C00025F9B /* Main.storyboard */,
-				B7F3C4BB197F55B8000F9E58 /* MisReportesViewController.swift */,
 				B7C24276197E279900E59F41 /* TestTableViewController.h */,
 				B7C24277197E279900E59F41 /* TestTableViewController.m */,
 				B7DC66C0197B7E4C00025F9B /* Images.xcassets */,
@@ -128,6 +135,10 @@
 				B7DC66D6197C890500025F9B /* swiftest-Bridging-Header.h */,
 				B768F757197E043300061563 /* LoginViewController.h */,
 				B768F758197E043300061563 /* LoginViewController.m */,
+				9D6D89D2198434EA001D6D09 /* BaseViewController.swift */,
+				9D70479F19843B9C006CAD18 /* Reporte.swift */,
+				9D7047A119844640006CAD18 /* MisReportesObjcTableViewController.h */,
+				9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */,
 			);
 			path = swiftest;
 			sourceTree = "<group>";
@@ -299,10 +310,13 @@
 				B7DC66DD197CB74B00025F9B /* NuevoReporteViewController.swift in Sources */,
 				B7DC66BC197B7E4C00025F9B /* ViewController.swift in Sources */,
 				B7DC66BA197B7E4C00025F9B /* AppDelegate.swift in Sources */,
+				9D7047A019843B9C006CAD18 /* Reporte.swift in Sources */,
+				9D7047A319844640006CAD18 /* MisReportesObjcTableViewController.m in Sources */,
 				B7DC66D9197C890500025F9B /* SWRevealViewController.m in Sources */,
 				B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */,
+				9D6D89D3198434EA001D6D09 /* BaseViewController.swift in Sources */,
+				9D6D89D719843871001D6D09 /* MisReportesTableViewController.swift in Sources */,
 				B7C24278197E279900E59F41 /* TestTableViewController.m in Sources */,
-				B7F3C4BC197F55B8000F9E58 /* MisReportesViewController.swift in Sources */,
 				B768F759197E043300061563 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

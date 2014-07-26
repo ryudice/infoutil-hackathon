@@ -1,5 +1,5 @@
 class ReporteSerializer < ActiveModel::Serializer
-  attributes :id, :location
+  attributes :id, :zone, :location
 
 	def id
 	object.id.to_s
