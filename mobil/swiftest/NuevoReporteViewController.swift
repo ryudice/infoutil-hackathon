@@ -12,13 +12,20 @@ import CoreLocation
 
 
 class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    @IBOutlet  var mapView: MKMapView?
     
-    var _imagePickerController : UIImagePickerController!
     
-    @IBOutlet  var imageView: UIImageView!
     
-    var _locationManager : CLLocationManager!
+    @IBOutlet  var txtDescription: UITextField?
+
+    
+     @IBOutlet  var imageView: UIImageView?
+    
+    var _imagePickerController : UIImagePickerController?
+    
+    var _lat : Double?
+    var _long : Double?
+    
+    var _locationManager : CLLocationManager?
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
@@ -28,27 +35,60 @@ class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocatio
             NSLog("Location updated", "" )
             var currentLocation : CLLocation! = locationsArray[0] as CLLocation
             var lat = currentLocation.coordinate.latitude
+            _lat=lat
             var long = currentLocation.coordinate.longitude
+            _long=long
             println(lat)
 //            NSLog("%@",currentLocation.coordinate.latitude)
-            self.location.text = NSString(format: "%f , %f mamones", lat, long)
+            self.location!.text = NSString(format: "%f , %f mamones", lat, long)
         }
         
     }
     
-    @IBAction func sendReport(sender: AnyObject) {
-           
+    func getUserId() -> String{
+        
+        var app : AppDelegate! =   UIApplication.sharedApplication().delegate as AppDelegate
+        
+        return app.user!.objectID
         
     }
     
-    @IBOutlet var location: UILabel!
+    @IBAction func sendReport(sender: AnyObject) {
+        
+        
+        
+        var params : [String:AnyObject] = [ "zone" : self.txtDescription!.text,
+            "lat" :_lat!,
+            "long": _long!
+        ]
+        
+      var manager =  AFHTTPRequestOperationManager()
+     
+        
+
+        
+        manager.POST("http://localhost:3000/api/users/\(self.getUserId())/reportes", parameters: params, constructingBodyWithBlock: {(data: AFMultipartFormData!) in
+            
+        
+            
+            data.appendPartWithFileData(UIImageJPEGRepresentation(self.imageView!.image, 1.0), name: "picture", fileName: "picture.jpeg", mimeType: "image/jpeg")
+            
+            
+            }, success: nil , failure: nil)
+                
+        
+        
+        
+    }
+    
+    @IBOutlet var location: UILabel?
     
     @IBAction func showPicker(){
         _imagePickerController = UIImagePickerController()
         
         _imagePickerController!.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         
-        _imagePickerController.delegate = self
+        _imagePickerController!.delegate = self
         
         self.presentViewController(_imagePickerController, animated: true, completion: nil)
         
@@ -61,7 +101,7 @@ class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocatio
         
         var pickerImage = images[UIImagePickerControllerOriginalImage] as UIImage
         
-        self.imageView.image = pickerImage
+        self.imageView!.image = pickerImage
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
@@ -74,13 +114,13 @@ class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocatio
 //        self.mapView!.delegate = self
         
         _locationManager = CLLocationManager()
-        _locationManager.requestWhenInUseAuthorization()
-         _locationManager.requestAlwaysAuthorization()
-        _locationManager.delegate = self
-        _locationManager.distanceFilter = kCLDistanceFilterNone
-        _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        _locationManager!.requestWhenInUseAuthorization()
+         _locationManager!.requestAlwaysAuthorization()
+        _locationManager!.delegate = self
+        _locationManager!.distanceFilter = kCLDistanceFilterNone
+        _locationManager!.desiredAccuracy = kCLLocationAccuracyHundredMeters
 
-        _locationManager.startUpdatingLocation()
+        _locationManager!.startUpdatingLocation()
         // Do any additional setup after loading the view.
     }
 
