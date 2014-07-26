@@ -21,7 +21,7 @@ var app = new EmberApp();
 app.import('app/styles/bootstrap.css');
 
 app.import('app/styles/freelancer.css');
-app.import('vendor/bootstrap/dist/js/bootstrap.js');
+//app.import('vendor/bootstrap/dist/js/bootstrap.js');
 
 var extraAssets = pickFiles('vendor/fontawesome',{
 	srcDir : '/',
