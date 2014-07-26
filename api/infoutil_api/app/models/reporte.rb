@@ -2,8 +2,8 @@ require 'elasticsearch/model'
 
 class Reporte
   include Mongoid::Document
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
+ # include Elasticsearch::Model
+ # include Elasticsearch::Model::Callbacks
 
   
   field :location, type: Array
@@ -16,11 +16,11 @@ class Reporte
   belongs_to :user
   embeds_many :pictures
 
-  settings do
-  	mappings do
-  		indexes :location, type: 'geo_point', as: 'reporte_location'
-  	end
-  end
+  #settings do
+  	# mappings do
+  # 		indexes :location, type: 'geo_point', as: 'reporte_location'
+  # 	end
+  # end
 
   def as_indexed_json(options={})
     ReporteSerializer.new(self).as_json

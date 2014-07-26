@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     @IBOutlet var readVC : UIButton!
     
     @IBOutlet var revealButton: UIBarButtonItem!
@@ -24,8 +24,6 @@ class ViewController: UIViewController {
         
         
     }
-    
-    
     func setUpRevealController(){
         
         var revealController = self.revealViewController()
@@ -36,6 +34,8 @@ class ViewController: UIViewController {
         
         
     }
+    
+   
     
 
     override func didReceiveMemoryWarning() {

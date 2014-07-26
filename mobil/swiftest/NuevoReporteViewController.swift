@@ -11,7 +11,9 @@ import MapKit
 import CoreLocation
 
 
-class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NuevoReporteViewController: BaseViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate,
+    UIAlertViewDelegate,
+UINavigationControllerDelegate {
     
     
     
@@ -45,11 +47,11 @@ class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocatio
         
     }
     
-    func getUserId() -> String{
+  
+    
+    func alertView(alertView: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         
-        var app : AppDelegate! =   UIApplication.sharedApplication().delegate as AppDelegate
-        
-        return app.user!.objectID
+        self.navigationController.popViewControllerAnimated(true)
         
     }
     
@@ -63,19 +65,47 @@ class NuevoReporteViewController: UIViewController, MKMapViewDelegate, CLLocatio
         ]
         
       var manager =  AFHTTPRequestOperationManager()
-     
+  
         
-
+//        manager.POST(<#URLString: String?#>, parameters: params, constructingBodyWithBlock: {(data: AFMultipartFormData!)  in
+//            
+//            
+//            
+//            data.appendPartWithFileData(UIImageJPEGRepresentation(self.imageView!.image, 1.0), name: "picture", fileName: "picture.jpeg", mimeType: "image/jpeg")
+//            
+//            
+//            }, success: <#((AFHTTPRequestOperation!, AnyObject!) -> Void)?#>, failure: <#((AFHTTPRequestOperation!, NSError!) -> Void)?#>)
+  
         
-        manager.POST("http://localhost:3000/api/users/\(self.getUserId())/reportes", parameters: params, constructingBodyWithBlock: {(data: AFMultipartFormData!) in
+        let viewController = self
+        
+        manager.POST( "http://localhost:3000/api/users/\(self.getUserId())/reportes", parameters: params, constructingBodyWithBlock: { (data: AFMultipartFormData!)  in
             
         
+        
+            data!.appendPartWithFileData(UIImageJPEGRepresentation(self.imageView!.image, 1.0), name: "picture", fileName: "picture.jpeg", mimeType: "image/jpeg")
             
-            data.appendPartWithFileData(UIImageJPEGRepresentation(self.imageView!.image, 1.0), name: "picture", fileName: "picture.jpeg", mimeType: "image/jpeg")
             
-            
-            }, success: nil , failure: nil)
-                
+            } , success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
+               
+            },
+            failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+                println("Error: " + error.localizedDescription)
+            })
+        
+        
+         UIAlertView(title: "Infoutil", message: "Gracias por tu reporte", delegate: self, cancelButtonTitle: "OK").show()
+        
+        
+       
+        
+        
+        
+//        var parameters = ["user":"admin","password":"123456"]
+//        manager.POST( "http://examples.com/login",
+//        
+//        parameters: parameters,
+//       )
         
         
         

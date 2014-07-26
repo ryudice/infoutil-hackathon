@@ -22,7 +22,7 @@ class Api::ReportesController < ApplicationController
 	def create
 		reporte = @user.reportes.new(zone: reporte_params[:zone], location: [ reporte_params[:lat].to_f, reporte_params[:long].to_f] )
 		picture = Picture.new
-		binding.pry
+		#binding.pry
 		picture.picture = reporte_params[:picture]
 
 		reporte.pictures << picture
