@@ -23,6 +23,7 @@ export default Base.extend({
 						name : response.name
 					});
 					user.save();
+					
 				});
 
 				Ember.run(function() {

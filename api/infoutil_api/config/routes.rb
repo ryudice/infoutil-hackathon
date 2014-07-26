@@ -7,6 +7,9 @@ InfoutilApi::Application.routes.draw do
 
     end
 
+    resources :states
+    resources :cities
+
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

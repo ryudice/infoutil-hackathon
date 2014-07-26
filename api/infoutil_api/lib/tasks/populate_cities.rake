@@ -1,3 +1,5 @@
+require 'net/http'
+require 'uri'
 namespace :populate_cities do
 
 	task run: :environment do

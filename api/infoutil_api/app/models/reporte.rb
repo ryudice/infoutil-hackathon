@@ -8,10 +8,9 @@ class Reporte
   
   field :location, type: Array
   field :zone, type: String
-
   index({location: "2d"})
 
-  
+  belongs_to :estado
 
   belongs_to :user
   embeds_many :pictures

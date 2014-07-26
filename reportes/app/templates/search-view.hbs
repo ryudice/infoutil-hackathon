@@ -2,11 +2,15 @@
 	<div class="panel-heading"> Busqueda</div>
 	<div class="panel-body" style="color:black;">
 		<div class="form-group">
-			{{view Ember.Select class="form-control input-sm"  content=stateCb optionValuePath="content.name" prompt="Departamento" optionLabelPath="content.name"}}
+		{{#with view}}
+		
+			{{view Ember.Select class="form-control input-sm"  content=stateCb optionValuePath="content.id" prompt="Departamento" optionLabelPath="content.name" value=selectedState.id}}
 		</div>
 		<div class="form-group">
-			{{view Ember.Select class="form-control input-sm"  content=cityCb optionValuePath="content.name" prompt="Municipio" optionLabelPath="content.name"}}
+			{{view Ember.Select class="form-control input-sm"  content=cityCb optionValuePath="content.id" prompt="Municipio" optionLabelPath="content.name" value=selectedCity.id}}
 		</div>
+		{{/with}}
+
 	</div>
 	<div class="panel-footer">
 

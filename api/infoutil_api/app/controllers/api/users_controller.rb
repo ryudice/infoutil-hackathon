@@ -25,4 +25,8 @@ class Api::UsersController < ApplicationController
 
 	end
 
+	def index
+		render json: User.all 
+	end
+
 end
