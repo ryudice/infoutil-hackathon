@@ -6,6 +6,7 @@ class Api::ReportesController < ApplicationController
 	end
 
 	def index
+		
 
 		render json: @user.reportes
 

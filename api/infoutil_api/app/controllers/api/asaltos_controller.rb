@@ -6,9 +6,8 @@ class Api::AsaltosController < ApplicationController
 			location= params.permit(:location)[:location]
 			coordinates = [ location.split(",")[0].to_f,  location.split(",")[1].to_f ]
 
-			
-			render json: Asalto.geo_near(coordinates).max_distance(100).spherical
-			
+			#binding.pry
+			render json: { asaltos: ActiveModel::ArraySerializer.new(Asalto.geo_near(coordinates).max_distance(0.1), each_serializer: AsaltoSerializer)}
 		else
 
 			render json: Asalto.all
@@ -18,7 +17,7 @@ class Api::AsaltosController < ApplicationController
 
 	def create
 
-		binding.pry
+		
 		asalto =  Asalto.new(params.permit(:descripcion, location:[]))
 
 		if asalto.valid?

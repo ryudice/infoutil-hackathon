@@ -7,3 +7,4 @@ class Asalto
 
   index({location: "2d"})
 end
+	
