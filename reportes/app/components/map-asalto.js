@@ -30,7 +30,7 @@ export default Ember.Component.extend({
 				self.get('map').fitBounds(place.geometry.viewport);
 			} else {
 				self.get('map').setCenter(place.geometry.location);
-				self.get('map').setZoom(12);  
+				self.get('map').setZoom(15);  
 			}
 		});
 

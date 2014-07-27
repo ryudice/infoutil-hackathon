@@ -1,5 +1,5 @@
 class AsaltoSerializer < ActiveModel::Serializer
-  attributes :id,:longitud,:latitud
+  attributes :id,:location,:descripcion
   def id
   	object._id.to_s
   end

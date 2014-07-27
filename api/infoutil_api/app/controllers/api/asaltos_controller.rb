@@ -13,6 +13,19 @@ class Api::AsaltosController < ApplicationController
 
 			render json: Asalto.all
 
+		end
 	end
+
+	def create
+
+		binding.pry
+		asalto =  Asalto.new(params.permit(:descripcion, location:[]))
+
+		if asalto.valid?
+			asalto.save
+			render json: asalto
+		else
+			render nothing: true, status: :bad_request
+		end
 	end
 end
