@@ -2,6 +2,7 @@ import Base from 'simple-auth/authenticators/base';
 import Ember from 'ember';
 
 export default Base.extend({
+	user_id:null,
 	restore: function(properties) {
 		return new Ember.RSVP.Promise(function(resolve, reject) {
 			if (!Ember.isEmpty(properties.accessToken)) {
@@ -23,11 +24,14 @@ export default Base.extend({
 						name : response.name
 					});
 					user.save();
-					
+
 				});
 
 				Ember.run(function() {
-					resolve({ accessToken: fbResponse.authResponse.accessToken });
+					resolve({ 
+						accessToken: fbResponse.authResponse.accessToken,
+						facebook_id : fbResponse.authResponse.userID
+					});
 				});
 			} else {
 				reject();
