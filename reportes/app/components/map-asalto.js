@@ -45,6 +45,7 @@ export default Ember.Component.extend({
 	lastLocation:null,
 	actions:{
 		save : function(){
+			console.log("save");
 			var self = this;
 			this.store.createRecord('asalto',{
 				descripcion : this.get('descripcion'),

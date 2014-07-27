@@ -8,25 +8,43 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-Facebook-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-SocketRocket.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>07E2FAC218D7481EB1F445DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>154077E0F77C480AB9A58711</key>
 		<dict>
 			<key>primary</key>
@@ -37,7 +55,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>51D72108442941DE8E08BCD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>762A3D5978F642C6A8B6A3F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>964B6CF47E714D58BCD19BEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1744D54D9994F9EAEB726E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8D11285B7B84D6CA30B4161</key>
 		<dict>
 			<key>primary</key>
 			<true/>
