@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 @interface ApiFacade : NSObject<UIAlertViewDelegate>
 
+-(id) initWithManager: (CLLocationManager *) manager;
+
 -(void) checkAsaltosWithCoordinates: (NSString *) coordinates ;
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;

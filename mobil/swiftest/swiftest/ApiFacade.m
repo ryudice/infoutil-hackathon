@@ -27,7 +27,7 @@
 
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
+    [self.manager startUpdatingLocation];
     
 }
 
@@ -50,6 +50,8 @@
             NSLog(@"asalto encontrado");
             
             [[[UIAlertView alloc]initWithTitle:@"Infoutil" message:@"Se encuentra cerca de un punto de asalto" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+            
+            [self.manager stopUpdatingLocation];
         }
         
 //        NSLog(@"JSON: %@", responseObject);

@@ -96,7 +96,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             var coordinates = "\(lat),\(long)"
             var params : [String:String] = ["location": "\(lat),\(long)" ]
             
-            ApiFacade.checkAsaltosWithCoordinates(coordinates)
+            var facade = ApiFacade(manager: _locationManager)
+            
+            facade.checkAsaltosWithCoordinates(coordinates)
 //            manager.GET("http://localhost:3000/api/asaltos", parameters: params, success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
 //            
 //                 var json =   responseObject as NSDictionary!
