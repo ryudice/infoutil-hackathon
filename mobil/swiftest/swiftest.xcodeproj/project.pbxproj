@@ -12,11 +12,13 @@
 		9D6D89D719843871001D6D09 /* MisReportesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */; };
 		9D7047A019843B9C006CAD18 /* Reporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70479F19843B9C006CAD18 /* Reporte.swift */; };
 		9D7047A319844640006CAD18 /* MisReportesObjcTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */; };
+		9D7047A6198458A4006CAD18 /* CercaDeMiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047A5198458A4006CAD18 /* CercaDeMiViewController.m */; };
+		9D7047D8198493E2006CAD18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D7198493E2006CAD18 /* AppDelegate.m */; };
+		9D7047DA198496C0006CAD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D9198496C0006CAD18 /* AppDelegate.swift */; };
 		B768F759197E043300061563 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B768F758197E043300061563 /* LoginViewController.m */; };
 		B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768F75C197E10F000061563 /* SideBarTableViewController.swift */; };
 		B7BDCC14197F8063005BC12F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BDCC13197F8063005BC12F /* CoreLocation.framework */; };
 		B7C24278197E279900E59F41 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C24277197E279900E59F41 /* TestTableViewController.m */; };
-		B7DC66BA197B7E4C00025F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC66B9197B7E4C00025F9B /* AppDelegate.swift */; };
 		B7DC66BC197B7E4C00025F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC66BB197B7E4C00025F9B /* ViewController.swift */; };
 		B7DC66BF197B7E4C00025F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC66BD197B7E4C00025F9B /* Main.storyboard */; };
 		B7DC66C1197B7E4C00025F9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DC66C0197B7E4C00025F9B /* Images.xcassets */; };
@@ -42,6 +44,11 @@
 		9D70479F19843B9C006CAD18 /* Reporte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reporte.swift; sourceTree = "<group>"; };
 		9D7047A119844640006CAD18 /* MisReportesObjcTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MisReportesObjcTableViewController.h; sourceTree = "<group>"; };
 		9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MisReportesObjcTableViewController.m; sourceTree = "<group>"; };
+		9D7047A4198458A4006CAD18 /* CercaDeMiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CercaDeMiViewController.h; sourceTree = "<group>"; };
+		9D7047A5198458A4006CAD18 /* CercaDeMiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CercaDeMiViewController.m; sourceTree = "<group>"; };
+		9D7047D6198493E2006CAD18 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D7047D7198493E2006CAD18 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D7047D9198496C0006CAD18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B768F757197E043300061563 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B768F758197E043300061563 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B768F75C197E10F000061563 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +57,6 @@
 		B7C24277197E279900E59F41 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		B7DC66B4197B7E4C00025F9B /* swiftest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DC66B8197B7E4C00025F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7DC66B9197B7E4C00025F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7DC66BB197B7E4C00025F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7DC66BE197B7E4C00025F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7DC66C0197B7E4C00025F9B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -120,12 +126,14 @@
 		B7DC66B6197B7E4C00025F9B /* swiftest */ = {
 			isa = PBXGroup;
 			children = (
+				9D7047D9198496C0006CAD18 /* AppDelegate.swift */,
+				9D7047D6198493E2006CAD18 /* AppDelegate.h */,
+				9D7047D7198493E2006CAD18 /* AppDelegate.m */,
 				9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */,
 				B768F75C197E10F000061563 /* SideBarTableViewController.swift */,
 				B7DC66D7197C890500025F9B /* SWRevealViewController.h */,
 				B7DC66DC197CB74B00025F9B /* NuevoReporteViewController.swift */,
 				B7DC66D8197C890500025F9B /* SWRevealViewController.m */,
-				B7DC66B9197B7E4C00025F9B /* AppDelegate.swift */,
 				B7DC66BB197B7E4C00025F9B /* ViewController.swift */,
 				B7DC66BD197B7E4C00025F9B /* Main.storyboard */,
 				B7C24276197E279900E59F41 /* TestTableViewController.h */,
@@ -139,6 +147,8 @@
 				9D70479F19843B9C006CAD18 /* Reporte.swift */,
 				9D7047A119844640006CAD18 /* MisReportesObjcTableViewController.h */,
 				9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */,
+				9D7047A4198458A4006CAD18 /* CercaDeMiViewController.h */,
+				9D7047A5198458A4006CAD18 /* CercaDeMiViewController.m */,
 			);
 			path = swiftest;
 			sourceTree = "<group>";
@@ -307,13 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7047A6198458A4006CAD18 /* CercaDeMiViewController.m in Sources */,
 				B7DC66DD197CB74B00025F9B /* NuevoReporteViewController.swift in Sources */,
 				B7DC66BC197B7E4C00025F9B /* ViewController.swift in Sources */,
-				B7DC66BA197B7E4C00025F9B /* AppDelegate.swift in Sources */,
 				9D7047A019843B9C006CAD18 /* Reporte.swift in Sources */,
 				9D7047A319844640006CAD18 /* MisReportesObjcTableViewController.m in Sources */,
 				B7DC66D9197C890500025F9B /* SWRevealViewController.m in Sources */,
+				9D7047D8198493E2006CAD18 /* AppDelegate.m in Sources */,
 				B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */,
+				9D7047DA198496C0006CAD18 /* AppDelegate.swift in Sources */,
 				9D6D89D3198434EA001D6D09 /* BaseViewController.swift in Sources */,
 				9D6D89D719843871001D6D09 /* MisReportesTableViewController.swift in Sources */,
 				B7C24278197E279900E59F41 /* TestTableViewController.m in Sources */,
@@ -440,7 +452,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = swiftest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "swiftest/swiftest-Bridging-Header.h";
@@ -461,7 +473,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = swiftest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "swiftest/swiftest-Bridging-Header.h";

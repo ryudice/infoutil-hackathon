@@ -60,3 +60,9 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 16
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
 
+// SocketRocket
+#define COCOAPODS_POD_AVAILABLE_SocketRocket
+#define COCOAPODS_VERSION_MAJOR_SocketRocket 0
+#define COCOAPODS_VERSION_MINOR_SocketRocket 3
+#define COCOAPODS_VERSION_PATCH_SocketRocket 1
+

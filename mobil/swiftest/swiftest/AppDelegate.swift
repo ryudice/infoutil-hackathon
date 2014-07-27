@@ -9,18 +9,88 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
                             
     var window: UIWindow?
 
+    var _locationManager : CLLocationManager?
+    
     
     var user : FBGraphUser?
 
+//    func webSocket(webSocket: SRWebSocket!, didReceiveMessage message: AnyObject!)
+//    {
+//        
+//        
+//    }
+//    
+//    func webSocketDidOpen(webSocket: SRWebSocket!) {
+//        
+//        	webSocket.send("holamamon")
+//    }
+    
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+        
+        _locationManager = CLLocationManager()
+        _locationManager!.requestWhenInUseAuthorization()
+        _locationManager!.requestAlwaysAuthorization()
+        _locationManager!.delegate = self
+        _locationManager!.distanceFilter = kCLDistanceFilterNone
+        _locationManager!.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        _locationManager!.startUpdatingLocation()
+        
+//        var socket : SRWebSocket = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "ws://localhost:8080")))
+//        
+//        
+//        socket.open()
+        
+//        socket.send("mamon")
+        
+        
         return true
     }
 
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+        var locationsArray : Array! = locations
+        
+        if(locationsArray.count > 0){
+            NSLog("Location updated delegate", "" )
+            var currentLocation : CLLocation! = locationsArray[0] as CLLocation
+            var lat = currentLocation.coordinate.latitude
+            
+            var long = currentLocation.coordinate.longitude
+            
+            println(lat)
+            
+            var manager = AFHTTPRequestOperationManager()
+            
+            var params : [String:String] = ["location": "\(lat),\(long)" ]
+            
+            manager.GET("http://localhost:3000/api/asaltos", parameters: params, success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
+            
+                 var json =   responseObject as NSDictionary!
+                
+              
+                
+                if (json.count > 0){
+                    UIAlertView(title: "Infoutil", message: "Estas cerca de un punto de asalto", delegate: nil, cancelButtonTitle: "OK").show()
+                }
+            
+            
+                }, failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+                    println("Error: " + error.localizedDescription)
+                })
+            
+            //            NSLog("%@",currentLocation.coordinate.latitude)
+//            self.location!.text = NSString(format: "%f , %f mamones", lat, long)
+        }
+        
+    }
+    
+
+    
     func applicationWillResignActive(application: UIApplication!) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

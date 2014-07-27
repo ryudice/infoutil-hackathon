@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ekG-La-1nj">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
@@ -130,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="885" y="-395"/>
         </scene>
-        <!--View Controller-->
+        <!--Cerca De Mi View Controller-->
         <scene sceneID="E6T-6O-5mr">
             <objects>
-                <viewController id="8p2-Ad-4D5" sceneMemberID="viewController">
+                <viewController id="8p2-Ad-4D5" customClass="CercaDeMiViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pi6-np-rVH"/>
                         <viewControllerLayoutGuide type="bottom" id="98a-sx-kwO"/>
@@ -148,12 +147,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7VT-rO-u1D"/>
+                    <navigationItem key="navigationItem" id="7VT-rO-u1D">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="YMd-q5-EMX"/>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
                         <size key="portraitSize" width="320" height="568"/>
                         <size key="landscapeSize" width="568" height="320"/>
                     </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="revealButton" destination="YMd-q5-EMX" id="ta8-Mj-OfR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCC-Ld-brJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

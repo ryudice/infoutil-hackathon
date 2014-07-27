@@ -1,3 +1,4 @@
 pod 'Facebook-iOS-SDK','3.16'
 #pod 'RestKit','0.23.2'
 pod 'AFNetworking', '2.3.1'
+pod 'SocketRocket', '0.3.1-beta2'
