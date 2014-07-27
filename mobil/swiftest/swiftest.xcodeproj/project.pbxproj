@@ -15,6 +15,7 @@
 		9D7047A6198458A4006CAD18 /* CercaDeMiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047A5198458A4006CAD18 /* CercaDeMiViewController.m */; };
 		9D7047D8198493E2006CAD18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D7198493E2006CAD18 /* AppDelegate.m */; };
 		9D7047DA198496C0006CAD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D9198496C0006CAD18 /* AppDelegate.swift */; };
+		9D7047DC1984A955006CAD18 /* ApiFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047DB1984A955006CAD18 /* ApiFacade.m */; };
 		B768F759197E043300061563 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B768F758197E043300061563 /* LoginViewController.m */; };
 		B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768F75C197E10F000061563 /* SideBarTableViewController.swift */; };
 		B7BDCC14197F8063005BC12F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BDCC13197F8063005BC12F /* CoreLocation.framework */; };
@@ -49,6 +50,8 @@
 		9D7047D6198493E2006CAD18 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D7047D7198493E2006CAD18 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9D7047D9198496C0006CAD18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D7047DB1984A955006CAD18 /* ApiFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiFacade.m; sourceTree = "<group>"; };
+		9D7047DD1984AA02006CAD18 /* ApiFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiFacade.h; sourceTree = "<group>"; };
 		B768F757197E043300061563 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B768F758197E043300061563 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B768F75C197E10F000061563 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 			children = (
 				9D7047D9198496C0006CAD18 /* AppDelegate.swift */,
 				9D7047D6198493E2006CAD18 /* AppDelegate.h */,
+				9D7047DD1984AA02006CAD18 /* ApiFacade.h */,
 				9D7047D7198493E2006CAD18 /* AppDelegate.m */,
 				9D6D89D619843871001D6D09 /* MisReportesTableViewController.swift */,
 				B768F75C197E10F000061563 /* SideBarTableViewController.swift */,
@@ -149,6 +153,7 @@
 				9D7047A219844640006CAD18 /* MisReportesObjcTableViewController.m */,
 				9D7047A4198458A4006CAD18 /* CercaDeMiViewController.h */,
 				9D7047A5198458A4006CAD18 /* CercaDeMiViewController.m */,
+				9D7047DB1984A955006CAD18 /* ApiFacade.m */,
 			);
 			path = swiftest;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7047DC1984A955006CAD18 /* ApiFacade.m in Sources */,
 				9D7047A6198458A4006CAD18 /* CercaDeMiViewController.m in Sources */,
 				B7DC66DD197CB74B00025F9B /* NuevoReporteViewController.swift in Sources */,
 				B7DC66BC197B7E4C00025F9B /* ViewController.swift in Sources */,

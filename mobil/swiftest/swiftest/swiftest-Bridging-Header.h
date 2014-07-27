@@ -7,3 +7,4 @@
 #import <AFNetworking/AFNetworking.h>
 #import <SocketRocket/SRWebSocket.h>
 #import "AppDelegate.h"
+#import "ApiFacade.h"

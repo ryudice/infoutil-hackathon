@@ -38,8 +38,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         _locationManager!.delegate = self
         _locationManager!.distanceFilter = kCLDistanceFilterNone
         _locationManager!.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        _locationManager!.startUpdatingLocation()
+       _locationManager!.startUpdatingLocation()
         
+//        var params : [String:String] = ["location":"13.685173, -89.239616"]
+        
+        
+        
+//         var manager = AFHTTPRequestOperationManager()
+//        manager.GET("http://localhost:3000/api/asaltos", parameters: params , success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
+//            
+//            var json : NSDictionary! =   responseObject as NSDictionary
+//            
+//            
+//            
+//            
+//            if (json.count > 0){
+//                //                     println("esta en un punto de asalto")
+//                
+//                //                    UIAlertView(title: "Infoutil", message: "Estas cerca de un punto de asalto", delegate: nil, cancelButtonTitle: "OK").show()
+//            }
+//            
+//            
+//            }, failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+//                println("Error: " + error.localizedDescription)
+//            })
+        
+        //            NSLog("%@",currentLocation.coordinate.latitude)
+        //            self.location!.text = NSString(format: "%f , %f mamones", lat, long)
+    
+
+    
 //        var socket : SRWebSocket = SRWebSocket(URLRequest: NSURLRequest(URL: NSURL(string: "ws://localhost:8080")))
 //        
 //        
@@ -65,23 +93,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             println(lat)
             
             var manager = AFHTTPRequestOperationManager()
-            
+            var coordinates = "\(lat),\(long)"
             var params : [String:String] = ["location": "\(lat),\(long)" ]
             
-            manager.GET("http://localhost:3000/api/asaltos", parameters: params, success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
-            
-                 var json =   responseObject as NSDictionary!
-                
-              
-                
-                if (json.count > 0){
-                    UIAlertView(title: "Infoutil", message: "Estas cerca de un punto de asalto", delegate: nil, cancelButtonTitle: "OK").show()
-                }
-            
-            
-                }, failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
-                    println("Error: " + error.localizedDescription)
-                })
+            ApiFacade.checkAsaltosWithCoordinates(coordinates)
+//            manager.GET("http://localhost:3000/api/asaltos", parameters: params, success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
+//            
+//                 var json =   responseObject as NSDictionary!
+//                
+//              
+//                
+//                if (json.count > 0){
+////                     println("esta en un punto de asalto")
+//                    
+////                    UIAlertView(title: "Infoutil", message: "Estas cerca de un punto de asalto", delegate: nil, cancelButtonTitle: "OK").show()
+//                }
+//            
+//            
+//                }, failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+//                    println("Error: " + error.localizedDescription)
+//                })
             
             //            NSLog("%@",currentLocation.coordinate.latitude)
 //            self.location!.text = NSString(format: "%f , %f mamones", lat, long)
