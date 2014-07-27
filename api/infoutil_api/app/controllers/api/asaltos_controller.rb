@@ -17,7 +17,6 @@ class Api::AsaltosController < ApplicationController
 
 	def create
 
-		
 		asalto =  Asalto.new(params.permit(:descripcion, location:[]))
 
 		if asalto.valid?

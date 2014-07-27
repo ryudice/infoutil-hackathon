@@ -16,6 +16,8 @@
 		9D7047D8198493E2006CAD18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D7198493E2006CAD18 /* AppDelegate.m */; };
 		9D7047DA198496C0006CAD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047D9198496C0006CAD18 /* AppDelegate.swift */; };
 		9D7047DC1984A955006CAD18 /* ApiFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047DB1984A955006CAD18 /* ApiFacade.m */; };
+		B75773DE19856E6C008157B8 /* Login-Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B75773DD19856E6C008157B8 /* Login-Screen.png */; };
+		B75773E019857A25008157B8 /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = B75773DF19857A25008157B8 /* button_background.png */; };
 		B768F759197E043300061563 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B768F758197E043300061563 /* LoginViewController.m */; };
 		B768F75D197E10F000061563 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768F75C197E10F000061563 /* SideBarTableViewController.swift */; };
 		B7BDCC14197F8063005BC12F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BDCC13197F8063005BC12F /* CoreLocation.framework */; };
@@ -52,6 +54,8 @@
 		9D7047D9198496C0006CAD18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D7047DB1984A955006CAD18 /* ApiFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiFacade.m; sourceTree = "<group>"; };
 		9D7047DD1984AA02006CAD18 /* ApiFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiFacade.h; sourceTree = "<group>"; };
+		B75773DD19856E6C008157B8 /* Login-Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login-Screen.png"; sourceTree = "<group>"; };
+		B75773DF19857A25008157B8 /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
 		B768F757197E043300061563 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B768F758197E043300061563 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B768F75C197E10F000061563 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 		B7DC66B6197B7E4C00025F9B /* swiftest */ = {
 			isa = PBXGroup;
 			children = (
+				B75773DF19857A25008157B8 /* button_background.png */,
+				B75773DD19856E6C008157B8 /* Login-Screen.png */,
 				9D7047D9198496C0006CAD18 /* AppDelegate.swift */,
 				9D7047D6198493E2006CAD18 /* AppDelegate.h */,
 				9D7047DD1984AA02006CAD18 /* ApiFacade.h */,
@@ -270,8 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75773DE19856E6C008157B8 /* Login-Screen.png in Resources */,
 				B7DC66BF197B7E4C00025F9B /* Main.storyboard in Resources */,
 				B7DC66C1197B7E4C00025F9B /* Images.xcassets in Resources */,
+				B75773E019857A25008157B8 /* button_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
