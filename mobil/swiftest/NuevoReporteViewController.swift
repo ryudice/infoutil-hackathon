@@ -86,8 +86,8 @@ UINavigationControllerDelegate {
             data!.appendPartWithFileData(UIImageJPEGRepresentation(self.imageView!.image, 1.0), name: "picture", fileName: "picture.jpeg", mimeType: "image/jpeg")
             
             
-            } , success: {(operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
-               
+            } , success: { [unowned self] (operation: AFHTTPRequestOperation!,responseObject: AnyObject!)  in
+              
             },
             failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
                 println("Error: " + error.localizedDescription)

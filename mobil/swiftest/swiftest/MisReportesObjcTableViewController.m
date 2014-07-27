@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "swiftest-Swift.h"
 #import "FBGraphUser.h"
+#import "AppDelegate.h"
 @interface MisReportesObjcTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButton;
 

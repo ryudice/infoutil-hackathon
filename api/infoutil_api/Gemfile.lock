@@ -58,12 +58,19 @@ GEM
     elasticsearch-transport (1.0.4)
       faraday
       multi_json
+    em-synchrony (1.0.3)
+      eventmachine (>= 1.0.0.beta.1)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.2.1)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     hashie (3.2.0)
     hike (1.2.3)
+    http_parser.rb (0.6.0)
     i18n (0.6.11)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -163,6 +170,8 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   elasticsearch-model (~> 0.1.4)
   elasticsearch-rails (~> 0.1.4)
+  em-synchrony
+  em-websocket
   jbuilder (~> 1.2)
   jquery-rails
   mongoid (~> 4.0.0)

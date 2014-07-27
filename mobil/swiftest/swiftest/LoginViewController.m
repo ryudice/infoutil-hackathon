@@ -10,6 +10,7 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import "swiftest-Swift.h"
 #import <AFNetworking/AFNetworking.h>
+#import "AppDelegate.h"
 @interface LoginViewController ()
 
 @end

@@ -5,3 +5,5 @@
 #import "SWRevealViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <AFNetworking/AFNetworking.h>
+#import <SocketRocket/SRWebSocket.h>
+#import "AppDelegate.h"
