@@ -38,6 +38,14 @@ export default Ember.Component.extend({
 
 			}
 			self.get('store').find('asalto',{location : place.geometry.location.k+","+place.geometry.location.B})
+			.then(function(data){
+				debugger;
+				self.get('markers').push(new google.maps.Marker({
+				position: new google.maps.LatLng(data.get('location')[0], data.get('location')[1]),
+				map: self.get('map'),
+				title: ''
+				}));
+			});
 
 		});
 
