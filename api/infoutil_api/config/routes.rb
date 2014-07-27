@@ -9,6 +9,7 @@ InfoutilApi::Application.routes.draw do
 
     resources :states
     resources :cities
+    resources :asaltos
 
   end
 
