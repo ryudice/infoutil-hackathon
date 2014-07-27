@@ -8,5 +8,6 @@ export default {
           container.register('authenticator:facebook', FbAuthenticator);
           application.inject('authenticator:facebook','store','store:application');
           application.inject('component:map-search','store','store:application');
+          application.inject('component:map-asalto','store','store:application');
         }
 };
