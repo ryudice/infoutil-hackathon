@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="o4V-kx-dGf" customClass="SideBarTableViewController" customModule="swiftest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qBy-qc-e50">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -108,10 +108,14 @@
                             <outlet property="delegate" destination="o4V-kx-dGf" id="5zd-6o-GyI"/>
                         </connections>
                     </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOs-Mi-BUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50" y="-366"/>
+            <point key="canvasLocation" x="-680" y="-192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qCe-iF-r3h">
@@ -127,7 +131,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ey-SC-4oI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="-395"/>
+            <point key="canvasLocation" x="-31" y="-269"/>
         </scene>
         <!--Cerca De Mi View Controller-->
         <scene sceneID="E6T-6O-5mr">
@@ -161,12 +165,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCC-Ld-brJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1575" y="-387"/>
+            <point key="canvasLocation" x="633" y="-239"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YWX-ap-noq">
             <objects>
                 <navigationController id="Tki-YF-q6H" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X8a-2o-3bf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -177,14 +186,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITi-jX-9N5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="1696"/>
+            <point key="canvasLocation" x="-846" y="558"/>
         </scene>
         <!--Mis Reportes Objc Table View Controller-->
         <scene sceneID="dCn-SF-wP7">
             <objects>
                 <tableViewController id="vhP-Wy-zPS" customClass="MisReportesObjcTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CZk-dP-KXT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -209,12 +218,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XJ-iR-BIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="1524"/>
+            <point key="canvasLocation" x="-371" y="544"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UOG-u1-ZHm">
             <objects>
                 <navigationController id="aGj-Gy-6s7" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryJ-vC-gFZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -225,7 +239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuF-UE-X81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-246" y="-1133"/>
+            <point key="canvasLocation" x="-500" y="-1022"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NpN-ja-4BF">
@@ -236,7 +250,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QlN-KS-Mg8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fFk-zh-Nim">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfB-4X-Zys">
@@ -271,7 +285,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9i5-Qq-fDt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AM9-Tn-Og4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXw-Jc-zFc" customClass="FBLoginView">
@@ -281,6 +295,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <outlet property="facebookLoginView" destination="sXw-Jc-zFc" id="Ogb-NG-6RH"/>
                         <segue destination="e2c-rU-Shq" kind="show" identifier="login_successful" id="RRN-jx-lW9"/>
@@ -299,10 +318,15 @@
                         <viewControllerLayoutGuide type="bottom" id="hMS-jH-nM7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5b7-8T-UnH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <segue destination="o4V-kx-dGf" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="aQu-Hp-xWs"/>
                         <segue destination="aGj-Gy-6s7" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="tWC-Pd-Ecp"/>
@@ -311,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcN-Zh-lPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-699" y="-322"/>
+            <point key="canvasLocation" x="-1207" y="-264"/>
         </scene>
         <!--Seleccione la ubicacion-->
         <scene sceneID="pVU-4w-1RF">
