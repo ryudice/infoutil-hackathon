@@ -32,6 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
         
+        var color =  UIColor(red: 0.23, green:0.62, blue:0.99, alpha:1.0)
+        
+        UINavigationBar.appearance().barTintColor = color
+        UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
+        
         _locationManager = CLLocationManager()
         _locationManager!.requestWhenInUseAuthorization()
         _locationManager!.requestAlwaysAuthorization()
